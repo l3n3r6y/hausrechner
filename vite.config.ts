@@ -4,6 +4,7 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
+  base: '/hausrechner/', // set the base path for assets to be found on github pages
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
